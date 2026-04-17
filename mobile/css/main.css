@@ -1,0 +1,649 @@
+main{
+    width:100%;
+    min-height:auto;
+    position:relative;
+    left:0px;
+    top:0px;
+}
+/* 비쥬얼시작 */
+ul#visual_list{
+    width:100%;
+    height:100vh;
+}
+ul#visual_list li{
+    width:100%;
+    height:100%;
+    position:relative;
+    left:0px;
+    top:0px;
+}
+ul#visual_list li:nth-child(1){
+    background: url('/hongkong_rwd/mobile/images/visual_img_01.png')no-repeat center;
+    background-size: cover; 
+}
+ul#visual_list li:nth-child(2){
+     background: url('/hongkong_rwd/mobile/images/visual_img_02.png')no-repeat center;
+    background-size: cover; 
+}
+ul#visual_list li:nth-child(3){
+    background: url('/hongkong_rwd/mobile/images/visual_img_03.png')no-repeat center;
+    background-size: cover;
+}
+section.visual_text{
+    width:100%;
+    height: 60px;
+    position:relative;
+    left:24px;
+    top:190px;
+}
+h2.visual_text_title{
+    font:bold 18px 'pretendard';
+    color: white;
+    margin-bottom: 20px;
+}
+p.visual_little_text{
+    font:normal 12px 'pretendard';
+    color:white;
+}
+/* 비쥬얼컨텐츠끝 */
+section#reservation{
+    width:100%;
+    height:232px;
+    position: absolute;
+    top:420px;
+    z-index: 1;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+ul#panel_list{
+    width:100%;
+    height:44px;
+    background: white;
+    position:relative;
+    top:0px;
+    left:0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    box-sizing: border-box;
+    border-radius: 4px 4px 0px 0px;
+}
+ul#panel_list::after{
+    content: '';
+    width:326px;
+    height:1px;
+    display: block;
+    background: black;
+    position: absolute;
+    top:44px;
+}
+p.panel_text{
+    font: 300 12px/44px 'pretendard';
+}
+ul#panel_list li.selected p.panel_text{
+    color: #702B91;
+    font-weight: 700;
+    font-size: 13px;
+}
+ul#contents_list{
+    width:100%;
+    height:188px;
+    background: white;
+    border-radius: 0 0 4px 4px;
+    margin-top: 0px;
+    display: flex;
+    position: relative;
+}
+ul#contents_list li{
+    width:100%;
+    height:100%;
+    position: absolute;
+    display: none;
+}
+ul#contents_list li.selected{
+    display: block;
+}
+ul#contents_list li:nth-child(3) button.serch_btn {
+    width: 230px;
+    height: 38px;
+}
+ul#contents_list li:nth-child(3) a.promotion_icon{
+    position: absolute;
+    right:0px;
+    bottom: 20px;
+}
+ul#contents_list li:nth-child(3) section#moredirection_bar{
+    margin: 4px;
+    box-sizing: border-box;
+    border: solid 1px #702B91;
+    text-align: center;
+}
+ul#contents_list li:nth-child(3) .content_text.third{
+    font:300 12px/36px 'pretendard';
+    color: #702B91;
+    
+}
+div.contents_wrap{
+    width:100%;
+    height:132px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    position: relative;
+    left: 0px;
+    top: 0px;
+    padding: 0px 16px;
+    box-sizing: border-box;
+}
+a.change_btn{
+    width:14px;
+    height:13px;
+    background: url('/hongkong_rwd/mobile/images/change_btn.png')no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 172px;
+    top: 16px;
+}
+span.during_icon{
+    width:14px;
+    height:1px;
+    background: url('/hongkong_rwd/mobile/images/during_icon.png')no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 172px;
+    top:68px;
+}
+section.direction_bar{
+    border-bottom: solid 1px #aeaeae;
+}
+section.direction_bar.left h2.content_text {
+    font: 300 12px/44px 'pretendard';
+    color: #aeaeae;
+}
+section.direction_bar.right h2.content_text {
+    font: 300 12px/44px 'pretendard';
+    text-align: right;
+    color: #aeaeae;
+}
+a.promotion_icon{
+    width: 85px;
+    height: 14px;
+    background: url('/hongkong_rwd/mobile/images/plus.png')no-repeat;
+    text-align: right;
+    position: absolute;
+    right:0px;
+    bottom: 14px;
+    margin-right: 16px;
+}
+span.promotion_text{
+    font: 300 12px/14px 'pretendard';
+    display: block;
+    color: #702B91;
+}
+button.serch_btn{
+    width:326px;
+    height:38px;
+    background:#702B91;
+    border: 0px;
+    border-radius: 4px;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    bottom:8px;
+    left: 16px;
+
+}
+span.serch_text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 300 14px 'pretendard';
+    color: #fff;
+}
+/* 예약창끝 */
+/* 추천여행지시작 */
+section#recommand{
+    width:100%; 
+    height:560px;
+    position: relative;
+    left:0px;
+    top:0px;
+    padding: 0px 16px;
+    box-sizing: border-box;
+}
+h2.title{
+    font:600 20px 'pretendard';
+    position: absolute;
+    top:20px;
+}
+p.little_title{
+    font:500 14px 'pretendard';
+    position: absolute;
+    top:44px;
+}
+ul#recommand_list{
+    width:100%;
+    height:432px;
+    position: relative;
+    top:92px;
+    display:flex;
+    /* flex-direction:row; */
+}
+ul#recommand_list li{
+    width:100%;
+    height:100%;
+    position: absolute;
+    border-radius: 10px;
+}
+ul#recommand_list li:nth-child(1){
+    background:url('/hongkong_rwd/mobile/images/hiroshima_img.png')no-repeat center;
+    background-size: cover;
+}
+ul#recommand_list li:nth-child(2){
+    background:url('/hongkong_rwd/mobile/images/페낭\ 3.png')no-repeat center;
+    background-size: cover;
+}
+ul#recommand_list li:nth-child(3){
+    background:url('/hongkong_rwd/mobile/images/phuquoc_img.png')no-repeat center;
+    background-size: cover;
+}
+ul#recommand_list li:nth-child(4){
+    background:url('/hongkong_rwd/mobile/images/donmueang_img.png')no-repeat center;
+    background-size: cover;
+}
+ul#recommand_list li:nth-child(5){
+    background:url('/hongkong_rwd/mobile/images/일본3\ 2.png')no-repeat center;
+    background-size: cover;
+}
+ul#recommand_list li:nth-child(6){
+    background:url('/hongkong_rwd/mobile/images/일본5\ 2.png')no-repeat center;
+    background-size: cover;
+}
+p.route_text{
+    font:500 16px 'pretendard';
+    color:white;
+    position: absolute;
+    bottom:60px;
+    left:16px;
+}
+p.price{
+    font:400 12px 'pretendard';
+    color: white;
+    position:absolute;
+    bottom:42px;
+    left:16px;
+}
+p.date{
+    font:200 12px 'pretendard';
+    color: white;
+    position:absolute;
+    bottom:28px;
+    left:16px;
+}
+ul#recommand_list::after{
+    content: '';
+    width:91.46%;
+    height:1px;
+    background: black;
+    display: block;
+    position: absolute;
+    bottom: -20px;
+}
+span#prev_btn{
+    width:6px;
+    height:12px;
+    display: inline-block;
+    background: url('/hongkong_rwd/mobile/images/prev_btn.png')no-repeat center;
+    position:absolute;
+    top:300px;
+    left:20px;
+}
+span#next_btn{
+    width:6px;
+    height:12px;
+    display:inline-block;
+    background: url('/hongkong_rwd/mobile/images/next_btn.png')no-repeat center;
+    position:absolute;
+    top:300px;
+    right:20px;
+}
+p.count_text{
+    font:300 12px 'pretendard';
+    position: absolute;
+    right: 0;
+    bottom:-26px;
+}
+/* 추천여행지끝 */
+/* 정보컨텐츠시작 */
+section#information{
+    width:100%;
+    height:400px;
+    position: relative;
+    left:0px;
+    top:0px;
+    padding: 0px 16px;
+    box-sizing: border-box;
+}
+ul#information_list{
+    width:100%;/*328px*/
+    height:328px;
+    position: relative;
+    top: 60px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:repeat(2,1fr);
+    gap:16px;
+}
+ul#information_list li{
+    border-radius: 25px;
+    position: relative;
+}
+ul#information_list li:nth-child(1){
+    background: #EA0599;
+}
+ul#information_list li:nth-child(2){
+    background: #9A0F98;
+}
+ul#information_list li:nth-child(3){
+    background: #6A0572;
+}
+ul#information_list li:nth-child(4){
+    background: #39065A;
+}
+a.information_title{
+    font:500 14px 'pretendard';
+    position: absolute;
+    color: white;
+    top:22px;
+}
+ul#information_list li:nth-child(1) a.information_title{
+    left:16px;
+}
+ul#information_list li:nth-child(2) a.information_title{
+    left:16px;
+}
+ul#information_list li:nth-child(3) a.information_title{
+    left:16px;
+}
+ul#information_list li:nth-child(4) a.information_title{
+    left:16px;
+}
+span.more_icon{
+    width:5px;
+    height:14px;
+    background:url('/hongkong_rwd/mobile/images/more_icon.png')no-repeat center;
+    position: absolute;
+    top:23px;
+}
+ul#information_list li:nth-child(1) span.more_icon{
+right:56px;
+}
+ul#information_list li:nth-child(2) span.more_icon{
+right:44px;
+}
+ul#information_list li:nth-child(3) span.more_icon{
+right:70px;
+}
+ul#information_list li:nth-child(4) span.more_icon{
+right:59px;
+}
+p.information_text{
+    font: 400 10px 'pretendard';
+    color: white;
+    position: absolute;
+    top:45px;
+    left:16px;
+}
+span.effect_icon{
+    width:30px;
+    height:30px;
+    position: absolute;
+    right:20px;
+    bottom:20px;
+}
+ul#information_list li:nth-child(1) span.effect_icon{
+    background: url('/hongkong_rwd/mobile/images/Megaphone_icon.png')no-repeat center;
+}
+ul#information_list li:nth-child(2) span.effect_icon{
+    background: url('/hongkong_rwd/mobile/images/Briefcase_icon.png')no-repeat center;
+}
+ul#information_list li:nth-child(3) span.effect_icon{
+    background: url('/hongkong_rwd/mobile/images/World\ Map_icon.png')no-repeat center;
+}
+ul#information_list li:nth-child(4) span.effect_icon{
+    background: url('/hongkong_rwd/mobile/images/Seat_icon.png')no-repeat center;
+}
+/* 정보컨텐츠끝 */
+/* 주요여행지시작 */
+section#popular{
+    width:100%;
+    min-height:100px;
+    padding:0px 16px;
+    box-sizing: border-box;
+    position: relative;
+}
+ul#popular_text_list{
+    width:100%;
+    /* height:184px; */
+    position:relative;
+    left:0px;
+    top:84px;
+    display: flex;
+    flex-direction: column;
+    overflow:scroll;
+}
+ul#popular_text_list>li{
+    width:100%; 
+    /* height:46px; */
+    border-bottom: solid 1px black;
+    box-sizing: border-box;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+ul#popular_text_list>li:nth-child(1){
+    border-top:solid 1px black;
+}
+p.popular_text{
+    font:400 14px/46px 'pretendard';
+}
+span.more_down_light_icon{
+    width:14px;
+    height:8px;
+    background: url('/hongkong_rwd/mobile/images/more_down_light_icon.png') no-repeat center;
+    position: absolute;
+    right:16px;
+    top:19px;
+}
+span.more_down_light_icon_selected{
+    transform: rotate(180deg);
+}
+ul.popular_place_list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    align-items: center;
+    justify-content: center;
+}
+ul.popular_place_list li{
+    width:150px;
+    height:150px;
+    border: solid 2px #EFEFEF;
+    box-sizing: border-box;
+    border-radius:8px;
+    position: relative;
+    margin-bottom:4px;
+    
+} 
+ul#popular_text_list>li:nth-child(1) ul.popular_place_list>li:nth-child(1){
+    background: url('/hongkong_rwd/mobile/images/hukuoka.img.png')no-repeat center;
+    background-size: cover;
+}
+ul#popular_text_list>li:nth-child(1) ul.popular_place_list>li:nth-child(2){
+    background: url('/hongkong_rwd/mobile/images/nagoya_img.png')no-repeat center;
+    background-size: cover;
+}
+ul#popular_text_list>li:nth-child(1) ul.popular_place_list>li:nth-child(3){
+    background: url('/hongkong_rwd/mobile/images/gagoshima_img.png')no-repeat center;
+    background-size: cover;
+}
+ul#popular_text_list>li:nth-child(2) ul.popular_place_list>li:nth-child(1){
+    background: url('/hongkong_rwd/mobile/images/chianmai_img.png')no-repeat center;
+    background-size: cover;
+}
+ul#popular_text_list>li:nth-child(2) ul.popular_place_list>li:nth-child(2){
+    background: url('/hongkong_rwd/mobile/images/phucat_img.png')no-repeat center;
+    background-size: cover;
+}
+ul#popular_text_list>li:nth-child(3) ul.popular_place_list>li:nth-child(1){
+    background: url('/hongkong_rwd/mobile/images/baizing_img.png')no-repeat center;
+    background-size: cover;
+}
+ul#popular_text_list>li:nth-child(3) ul.popular_place_list>li:nth-child(2){
+    background: url('/hongkong_rwd/mobile/images/shinzeon_img.png')no-repeat center;
+    background-size: cover;
+}
+ul#popular_text_list>li:nth-child(3) ul.popular_place_list>li:nth-child(3){
+    background: url('/hongkong_rwd/mobile/images/nigbo_img.png')no-repeat center;
+    background-size: cover;
+}
+ul#popular_text_list>li:nth-child(4) ul.popular_place_list>li:nth-child(1){
+    background: url('/hongkong_rwd/mobile/images/danang_img.png')no-repeat center;
+    background-size: cover;
+}
+ul#popular_text_list>li:nth-child(4) ul.popular_place_list>li:nth-child(2){
+    background: url('/hongkong_rwd/mobile/images/hanoi_img.png')no-repeat center;
+    background-size: cover;
+}
+p.popular_little_text{
+    position: absolute;
+    left:18px;
+    top:28px;
+    font: 500 9px 'pretendard';
+    color:white;
+}
+p.popular_big_text{
+    position:absolute;
+    left:18px;
+    top:42px;
+    font: 500 12px 'pretendard';
+    color: white;
+}
+p.popular_date{
+    position: absolute;
+    right:10px;
+    bottom:25px;
+    font:400 9px 'pretendard';
+    color:white;
+}
+p.popular_price{
+    position: absolute;
+    right:8px;
+    bottom:14px;
+    font:500 10px 'pretendard';
+    color:white;
+}
+/* 주요여행지끝 */
+/* 띠배너시작 */
+section#banner{
+    width:100%;
+    height:100px;
+    margin-top: 120px;
+    box-sizing: border-box;
+}
+ul#banner_list{
+    width:100%;
+    height:100%;
+    /* position: relative; */
+    left:0px;
+    top:0px;
+    display: flex;
+    flex-direction:row;
+}
+ul#banner_list li{
+    width: 100%;
+    height:100%;
+    /* position: absolute; */
+    left:0px;
+    top:0px;
+
+}
+div.banner_explain_wrap{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul#banner_list li:nth-child(1){
+    background:#DBE3F0;
+}
+ul#banner_list li:nth-child(2){
+    background:#D4B9DF;
+}
+ul#banner_list li:nth-child(3){
+    background:#E5C4CF;
+}
+ul#banner_list li:nth-child(4){
+    background:#FFDDB8;
+}
+span.explain_icon{
+    width:100px;
+    height:100px;
+    /* position: absolute;
+    left:4px;
+    top:0px; */
+}
+ul#banner_list li:nth-child(1) span.explain_icon{
+    background:url('/hongkong_rwd/mobile/images/bell_img.png')no-repeat center;
+    background-size: cover;
+}
+ul#banner_list li:nth-child(2) span.explain_icon{
+    background:url('/hongkong_rwd/mobile/images/clock_img.png')no-repeat center;
+    background-size: cover;
+}
+ul#banner_list li:nth-child(3) span.explain_icon{
+    background:url('/hongkong_rwd/mobile/images/shield_img.png')no-repeat center;
+    background-size: cover;
+}
+ul#banner_list li:nth-child(4) span.explain_icon{
+    background:url('/hongkong_rwd/mobile/images/camera_img.png')no-repeat center;
+    background-size: cover;
+}
+p.banner_text{
+    font: 500 16px 'pretendard';
+    margin-top: 36px;
+    color:#5B5B5B;
+}
+span.site_link_icon{
+    margin-top: 70px;
+    margin-right: 10px;
+}
+ul#banner_list li:nth-child(1) span.site_link_icon{
+    width:55px;
+    height:23px;
+    background: url('/hongkong_rwd/mobile/images/agoda_logo.png')no-repeat center;
+    background-size: cover;
+}
+ul#banner_list li:nth-child(2) span.site_link_icon{
+    width:68px;
+    height:14px;
+    background: url('/hongkong_rwd/mobile/images/rentalcar_logo.png')no-repeat center;
+    background-size: cover;
+}
+ul#banner_list li:nth-child(3) span.site_link_icon{
+    width:56px;
+    height:24px;
+    background: url('/hongkong_rwd/mobile/images/klock_logo.png')no-repeat center;
+    background-size: cover;
+}
+ul#banner_list li:nth-child(4) span.site_link_icon{
+    width:55px;
+    height:20px;
+    background: url('/hongkong_rwd/mobile/images/spexpress_logo.png')no-repeat center;
+    background-size: cover;
+}
+/* 띠배너끝 */

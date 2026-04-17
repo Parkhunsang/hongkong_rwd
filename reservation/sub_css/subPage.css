@@ -1,0 +1,520 @@
+div#contents_wrap{
+    width:100%;
+    min-height:600px;
+    
+}
+div#small_direction_wrap{
+    width:100%;
+    height:80px;
+    display:flex;
+    justify-content:center;
+    background:#702B91;
+    margin-top:80px;
+}
+section#small_direction_bar{
+    width:1400px;
+    height:76px;
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    position:relative;
+    left:0px;
+    top:0px;
+}
+div.small_direction{
+    width:100%;
+    height:100%;
+    background:#f3f3f3;
+    padding-left:16px;
+    position:relative;
+    left:0px;
+    top:0px;
+    /* border-radius: 10px; */
+}
+div.small_direction:nth-child(2) {
+    border-radius: 10px 0px 0px 10px;
+}
+div.small_direction:nth-child(6){
+    border-radius: 0px 10px 10px 0px;
+}
+div.small_direction::before{
+    content:'';
+    display: block;
+    width:1px;
+    height:32px;
+    background:black;
+    position:absolute;
+    top: 22px;
+    left:0px;
+}
+div.small_direction:nth-child(2)::before{
+    background:none;
+}
+div.small_direction:nth-child(3)::before{
+    background:none;
+}
+div.small_direction:nth-child(5)::before{
+    background:none;
+}
+a.change_btn{
+    position:absolute;
+    top:26px;
+    left:-40px;
+}
+div.small_direction h2{
+    font:400 14px/76px 'pretendard';
+}
+/* 컨텐츠(예약창)끝  */
+/* 컨텐츠(출발편)시작  */
+/* 날짜선택시작 */
+div.reservation_wrap{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    margin-bottom: 60px;
+}
+section.start_date_list{
+    width:1400px;
+    height:100%;
+    margin-top: 140px;
+}
+h2.contents_title{
+    font:600 28px 'pretendard';
+    float:left;
+    margin-right:12px;
+}
+
+p.contents_text{
+    font:300 16px/48px 'pretendard';
+    
+}
+div.date_select_wrap{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: row;
+
+}
+ul.date_select_list{
+    width:100%;
+    height:96px;
+    border-top:solid 1px black;
+    border-bottom:solid 1px black;
+    display:flex;
+    justify-content:space-between;
+    padding-top:16px;
+    padding-bottom:16px;
+}
+ul.date_select_list li{
+    width:20%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius:10px;
+    position:relative;
+    left:0px;
+    top:0px;
+}
+ul.date_select_list.departure li.selected{
+    background: #702B91;
+}
+ul.date_select_list.arrival li.selected{
+    background: #702B91;
+}
+ul.date_select_list li::after{
+    content:'';
+    display:block;
+    width:1px;
+    height:50px;
+    background:black;
+    position:absolute;
+    left:0px;
+    top:23px;
+}
+ul.date_select_list li:first-child::after{
+    background:none;
+}
+p.date_text{
+    font:400 18px 'pretendard';
+}
+p.date_price_text{
+    font:300 16px 'pretendard';
+}
+ul.date_select_list.departure li.selected p.date_text.departure{
+    color:white;
+}
+ul.date_select_list.departure li.selected p.date_price_text.departure{
+    color:white;    
+}
+ul.date_select_list.arrival li.selected p.date_text.arrival{
+    color:white;
+}
+ul.date_select_list.arrival li.selected p.date_price_text.arrival{
+    color:white;
+}
+/*날짜선택끝*/
+/* 시간선택시작 */
+div.time_select_wrap{
+    width:100%;
+    height:100%;
+    position:relative;
+    left:0px;
+    top:0px;
+    display: none;
+    transition: 0.5s ease;
+}
+p.promotion_text{
+    width:100px;
+    height:36px;
+    background:#21B9DA;
+    font:400 14px/36px 'pretendard';
+    color:white;
+    text-align:center;
+    border-radius: 10px 0px 10px 0px;
+    position:absolute;
+    left:0px;
+    top:-20px;
+}
+div.time_option_select{
+    width:100%;
+    height:152px;
+    background:#f3f3f3;
+    border-radius: 10px;
+    margin-top:60px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+div.time{
+    width:57.14%;/*800px*/
+    height:60px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.departure_time{
+    width:5.625%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+div.take_time{
+    width:88.75%;/*680px*/
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    position:relative;
+    left:0px;
+    top:0px;
+}
+div.take_time::after{
+    content:'';
+    width:80%;
+    height:1px;
+    background: black;
+    display:block;
+    position:absolute;
+    left:10%;
+    top:36px;
+}
+div.arrival_time{
+    width:5.625%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+div.price{
+    width:28.57%;/*400px*/
+    height: 92px;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    position:relative;
+    left:0px;
+    top:0px;
+}
+div.price.selected{
+    background: #702B91;
+}
+div.price::after{
+    content:'';
+    width:80%;
+    height:1px;
+    background: black;
+    display:block;
+    position:absolute;
+    left:10%;
+    top:42px;
+}
+div.price.selected::after{
+    background: white;
+}
+p.time_text{
+    margin-top:12px;
+    font:bold 16px 'pretendard'
+}
+p.place_text{
+    margin-top:6px;
+    font:400 14px 'pretendard'
+}
+p.take_time_text{
+    margin-top: 12px;
+    font:400 14px 'pretendard';
+    position:relative;
+    left: 0px;
+    top:0px;
+}
+p.plane_num_text{
+    margin-top:2px;
+    font:400 14px 'pretendard'
+}
+p.seat_text{
+    font:300 16px 'pretendard';
+    text-align:center;   
+}
+p.price_text{
+    font:bold 22px 'pretendard';
+    color:black;
+}
+div.price.selected p.seat_text{
+    color: white;
+}
+div.price.selected p.price_text{
+    color: white;
+}
+div.seat_option_select{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:40px;
+}
+div.seat_option{
+    width:21.42%;/*300px*/
+    height: 100%;
+    margin-top:40px;
+    position:relative;
+    left:0px;
+    top:0px;
+}
+
+p.promotion_second{
+    width:100px;
+    height:36px;
+    background:#FEEA00;
+    font:600 14px/36px 'pretendard';
+    color:#702B91;
+    text-align:center;
+    border-radius: 10px 0px 10px 0px;
+    position:absolute;
+    left:0px;
+    top:-20px;
+    z-index:1;
+}
+div.up_box{
+    width:100%;
+    height:120px;
+    left:0px;
+    top:0px;
+    background:#f3f3f3;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: none;
+    position:relative;
+    left:0px;
+    top:0px;
+}
+div.up_box.selected{
+    background: #702B91;
+}
+div.up_box.selected p{
+    color:white;
+}
+div.up_box::before{
+    content: '';
+    width:20px;
+    height:20px;
+    background: white;
+    border-radius:50%;
+    display:block;
+    position:absolute;
+    left:-10px;
+    top:50px;
+    box-shadow: inset 0 1px 1px rgba(243,243,243,0.06);
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: 0.2s all 0s ease-in-out;
+}
+div.up_box::after{
+    content: '';
+    width:20px;
+    height:20px;
+    background: white;
+    border-radius:50%;
+    display:block;
+    position:absolute;
+    right:-10px;
+    top:50px;
+    box-shadow: inset 0 1px 1px rgba(243,243,243,0.06);
+    border: 2px solid transparent;
+    transition: 0.2s all 0s ease-in-out;
+}
+div.up_box p{
+    position:absolute;
+    color:#702B91;
+}
+p.up_box_text{
+    font:bold 20px 'pretendard';
+    left:40px;
+    top:34px;
+}
+p.up_box_price_text{
+    font:400 20px 'pretendard';
+    left:40px;
+    top:72px;
+}
+div.down_box{
+    width:100%;
+    height:220px;
+    background:#f3f3f3;
+    border-radius:0px 0px 10px 10px;
+    border-top:dotted 0.5px black;
+    display:flex;
+    padding:0px 8%; 
+    box-sizing:border-box;
+    justify-content: space-between;
+}
+ul.charge_list li{
+    margin-top: 16px;
+    position:relative;
+    left:0px;
+    top:0px;
+    text-indent:28px; 
+}
+p.charge_text{
+    font: 400 14px 'pretendard';
+}
+p.charge_price_text{
+    font: 400 14px 'pretendard';
+}
+ul.charge_list li::before{
+    content: '';
+    width:100%;
+    height:100%;
+    position:absolute;
+    display:block;
+    left:0px;
+    top:0px;
+}
+ul.charge_list li:nth-child(1):before{
+    background:url('/hongkong_rwd/reservation/sub_images/ticket_img.png') no-repeat;
+}
+ul.charge_list li:nth-child(2):before{
+    background:url('/hongkong_rwd/reservation/sub_images/coin_img.png') no-repeat;
+}
+ul.charge_list li:nth-child(3):before{
+    background:url('/hongkong_rwd/reservation/sub_images/backpack_img.png') no-repeat;
+}
+li.inner_weight{
+    position:relative;
+    left:0px;
+    top:0px;
+}
+li.inner_weight::before{
+    background:url('/hongkong_rwd/reservation/sub_images/beggage_img.png') no-repeat;
+}
+li.weight{
+    position:relative;
+    left:0px;
+    top:0px;
+}
+li.weight::before{
+    background:url('/hongkong_rwd/reservation/sub_images/full_beggage_img.png')no-repeat;
+}
+ul.charge_price_list li{
+    margin-top: 16px;
+}
+div#sum_wrap{
+    width:100%;
+    height:94px;
+    box-shadow:4px -4px 10px rgba(0,0,0,0.1);
+    background:white;
+    display:flex;
+    display: none;
+    justify-content:center;
+    margin-top: 60px;   
+    /* display: none; */
+}
+div#sum{
+    width:1400px;
+    height:100%;
+    display:flex;
+    justify-content: flex-end;
+    /* 새로운속성 */
+}
+div#sum_text_wrap{
+    width:28.57%;/*400px*/
+    height:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+p#sum_text{
+    font:500 20px 'pretendard';
+}
+p#sum_price{
+    font:bold 20px 'pretendard';
+    color:#702B91;
+}
+p#next_page{
+    width:170px;
+    height:50px;
+    background:#702B91;
+    font:700 16px/50px 'pretendard';
+    color:white;
+    text-align:center;
+    border-radius: 10px;
+}
+/* 미디어쿼리 */
+@media screen and (max-width:1200px){
+    div.seat_option_select{
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows:repeat(2,1fr);
+    }
+    p.charge_text{
+        font-size:1.16vw;
+    }
+    p.charge_price_text{
+        font-size:1.16vw;
+    }
+    p.up_box_text{
+        font-size:2vw;
+    }
+    p.up_box_price_text{
+        font-size:1.66vw;
+    }
+}
+@media screen and (max-width:980px){
+
+}

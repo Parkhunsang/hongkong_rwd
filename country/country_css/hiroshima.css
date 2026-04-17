@@ -1,0 +1,251 @@
+div#contents_wrap{
+    width:100%;
+    min-height: 100px;
+}
+div#route_wrap{
+    width:100%;
+    height:60px;
+    background: #702B91;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+section#route{
+    width:1400px;
+    height:100%;
+}
+div#route_utility{
+    width:570px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+button#home{
+    width:60px;
+    height:100%;
+    background: #411855;
+    border:none;
+    position: relative;
+    margin-right: 8px;
+}
+button#home::after{
+    content:'';
+    width:28px;
+    height: 26px;
+    background: url('/hongkong_rwd/country/country_images/home_icon.png')no-repeat center;
+    background-size: cover;
+    display: block;
+    margin: 0 auto;
+}
+div#route_text_wrap{
+    width:498px;
+    height:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    gap: 8px;
+}
+div#route_text_wrap>a{
+    width:166px;
+    display: flex;
+    justify-content: space-between;
+    font:500 15px/60px 'pretendard';
+    align-items: center;
+    color: white;
+}
+span.more_icon{
+    width:6px;
+    height:12px;
+    background: url('/hongkong_rwd/country/country_images/more_icon.png')no-repeat center;
+    display:inline-block;
+}
+div#route_list_wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul#route_list{
+    width:166px;
+    height:15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+ul#route_list li a{
+    font:500 15px 'pretendard';
+    color:white
+}
+div#route_img_box{
+    width:100%;
+    height: 300px;
+    background:url('/hongkong_rwd/country/country_images/route_img.png')no-repeat center;
+    background-size: cover;
+}
+div#destination_wrap{
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+}
+section#destination{
+    width:1400px;
+    height:100%;
+    margin-top: 100px;
+}
+h2#destination_title{
+    margin-top: 12px;
+    font:bold 20px 'pretendard';
+    color: black;
+    text-align: center;
+    position:relative;
+}
+h2#destination_title::after{
+    content:'';
+    width:90px;
+    height:4px;
+    background: #702B91;
+    display: block;
+    position:absolute;
+    left:656px;
+    top:-12px; 
+}
+div#destination_explain_wrap{
+    width:100%;
+    height:100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div#destination_explain_text_wrap{
+    width:684px;
+    height:346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div#destination_img_box{
+    width:500px;
+    height:500px;
+    background: url('/hongkong_rwd/country/country_images/hiroshima_nuclear_dom.png')no-repeat center;
+}
+p#destination_explain_title{
+    font:500 18px 'pretendard';
+    color: #702B91;
+}
+p.destination_explain_text{
+    font:normal 16px 'pretendard';
+}
+div#highlight{
+    width:100%;
+    height:200px;
+    margin-top: 150px;
+    padding:48px 58px;
+    box-sizing: border-box;
+    background: #f4f4f4;
+}
+h2#highlight_title{
+    font: 500 16px 'pretendard';
+    position: relative;
+}
+h2#highlight_title::after{
+    content: '';
+    width:68px;
+    height: 4px;
+    background: #702B91;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top:-8px;
+}
+div#highlight_explain_wrap{
+    width:1284px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    gap: 30px;
+}
+div.highlight_explain{
+    width:408px;
+    height: 96px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+span.check_icon{
+    width:26px;
+    height:26px;
+    background:url('/hongkong_rwd/country/country_images/check_box_icon.png')no-repeat center;
+    background-size:cover;
+    display: block;
+}
+p.highlight_explain_text{
+    width:352px;
+    font:normal 16px 'pretendard';
+}
+ul#highlight_images_list{
+    width:1400px;
+    height:540px;
+    margin-top:118px;
+    position: relative;
+    display:flex;
+    flex-direction: row;
+}
+ul#highlight_images_list li{
+    width:1000px;
+    height:470px;
+}
+p.highlight_text{
+    font: 400 14px 'pretendard';
+    margin-top: 8px;
+    text-align: center;
+}
+div#entertainment{
+    width:1400px;
+    height:100%;
+    margin-top: 100px;
+}
+h2#entertainment_title{
+    font:500 20px 'pretendard';
+    text-align: center;
+}
+ul#entertainment_list{
+    width:100%;
+    height:442px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap:117px;
+    margin-top: 100px;
+}
+ul#entertainment_list li{
+    width:337px;
+    height:100%;
+}
+div.entertainment_list_img{
+    width:100%;
+    height: 252px;
+}
+ul#entertainment_list li:nth-child(1) div.entertainment_list_img{
+    background:url('/hongkong_rwd/country/country_images/hiroshima_train_img.png')no-repeat center;
+    background-size: cover;
+}
+ul#entertainment_list li:nth-child(2) div.entertainment_list_img{
+    background:url('/hongkong_rwd/country/country_images/hiroshima_night_img.png')no-repeat center;
+    background-size: cover;
+}
+ul#entertainment_list li:nth-child(3) div.entertainment_list_img{
+    background:url('/hongkong_rwd/country/country_images/hiroshima_food_img.png')no-repeat center;
+    background-size: cover;
+}
+p.entertainment_list_title{
+    margin-top: 28px;
+    font:500 18px 'pretendard';
+}
+p.entertainment_list_text{
+    margin-top: 20px;
+    font:300 16px 'pretendard';
+}

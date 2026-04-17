@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/hongkong_rwd/mobile/css/reset.css">
+    <link rel="stylesheet" href="/hongkong_rwd/mobile/css/common.css">
+    <link rel="stylesheet" href="/hongkong_rwd/mobile/css/main.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/hongkong_rwd/mobile/js/nav.js"></script>
+    <script src="/hongkong_rwd/mobile/js/visual.js"></script>
+    <script src="/hongkong_rwd/mobile/js/contents.js"></script>
+    <script>
+        window.addEventListener('resize',()=>{
+        let deviceWidth=window.innerWidth;        
+        if(deviceWidth>768){          
+        window.location.href="http://daxi99.dothome.co.kr/hongkong_rwd/"        
+        } 
+        })  
+    </script>
+    <title>홍콩익스프레스모바일</title>
+    <style>
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+    
+        .swiper-slide {
+          display: flex;
+          justify-content: center;
+        }
+    
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      </style>
+
+      <script>
+document.addEventListener('DOMContentLoaded', ()=>{
+            var swiper1=new Swiper(".mySwiper", {});
+            var swiper2=new Swiper("#banner .mySwiper", {});
+        })
+      </script>
+</head>
+
+<body>
+<!-- 상단영역시작 -->
+<header>
+    <h1 id="logo">
+        <a href="#">홍콩익스프레스로고</a>
+    </h1>
+
+    <div id="sidemenu">
+        <a id="alerm_icon" href="#;"></a>
+        <a id="menu_icon" href="#;"></a>
+    </div>
+
+    <nav id="mainmenu">
+        <h2 class="hidden">메인메뉴</h2>
+        <div id="login_box">
+            <p id="login_box_text">회원가입하고 다양한 혜택 받으세요</p>
+            <p class="login_join_text">로그인</p>
+            <p class="login_join_text">회원가입</p>
+            <span id="close_btn"></span>
+        </div>
+        
+        <ul id="mainmenu_list">
+            <li>
+                <a class="mainmenu_text" href="#;">마이페이지</a>
+                <span class="more_down_icon"></span>
+
+                <ul class="submenu_list">
+                    <li>
+                        <a class="submenu_text" href="#;">예약안내</a>
+                        <span class="gray_more_icon">
+                        </span>
+                        <ul class="submenu_sub_list">
+                            <li>
+                                <a class="submenu_sub_text" href="#;">항공권 예약</a>
+                            </li>
+                            <li>
+                                <a class="submenu_sub_text" href="#;">예약/결제 안내</a>
+                            </li>
+                            <li>
+                                <a class="submenu_sub_text" href="#;">예약변경/취소/환불</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="submenu_text" href="#;">추천항공권</a>
+                        <span class="gray_more_icon"></span>
+                        <ul class="submenu_sub_list">
+                            <li>
+                                <a class="submenu_sub_text" href="#;">최저가항공권</a>
+                            </li>
+                            <li>
+                                <a class="submenu_sub_text" href="#;">맞춤항공권</a>
+                            </li> 
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="submenu_text" href="#;">운임 및 수수료</a>
+                        <span class="gray_more_icon"></span>
+                        <ul class="submenu_sub_list">
+                            <li><a class="submenu_sub_text" href="#;">국제선</a>
+                            </li> 
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="submenu_text" href="#;">할인</a>
+                        <span class="gray_more_icon"></span>
+                        <ul class="submenu_sub_list">
+                            <li><a class="submenu_sub_text" href="#;">할인쿠폰</a></li>
+                            <li><a class="submenu_sub_text" href="#;">프로모션코드</a></li>
+                            <li><a class="submenu_sub_text" href="#;">신분할인제도</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a class="mainmenu_text" href="#;">운항정보</a>
+                <span class="more_down_icon"></span>
+                <ul class="submenu_list">
+                    <li>
+                        <a class="submenu_text" href="#;">홍콩</a>
+                    </li>
+                    <li>
+                        <a class="submenu_text" href="#;">대한민국</a>
+                        <span class="gray_more_icon">
+                        </span>
+                        <ul class="submenu_sub_list">
+                            <li><a class="submenu_sub_text" href="#;">부산</a></li>
+                            <li><a class="submenu_sub_text" href="#;">제주</a></li>
+                            <li><a class="submenu_sub_text" href="#;">서울(인천)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="submenu_text" href="#;">중국</a>
+                    </li>
+                    <li>
+                        <a class="submenu_text" href="#;">일본</a>
+                        <span class="gray_more_icon"></span>
+                        <ul class="submenu_sub_list">
+                            <li><a class="submenu_sub_text" href="#;">후쿠오카</a></li>
+                            <li><a class="submenu_sub_text" href="#;">히로시마</a></li>
+                            <li><a class="submenu_sub_text" href="#;">가고시마</a></li>
+                            <li><a class="submenu_sub_text" href="#;">나고야</a></li>
+                            <li><a class="submenu_sub_text" href="#;">오키나와</a></li>
+                            <li><a class="submenu_sub_text" href="#;">오사카</a></li>
+                            <li><a class="submenu_sub_text" href="#;">센다이</a></li>
+                            <li><a class="submenu_sub_text" href="#;">시즈오카</a></li>
+                            <li><a class="submenu_sub_text" href="#;">타카마츠</a></li>
+                            <li><a class="submenu_sub_text" href="#;">도쿄</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="submenu_text" href="#;">태국</a>
+                        <span class="gray_more_icon"></span>
+                        <ul class="submenu_sub_list">
+                            <li><a class="submenu_sub_text" href="#;">방콕</a></li>
+                            <li><a class="submenu_sub_text" href="#;">치앙마이</a></li>
+                            <li><a class="submenu_sub_text" href="#;">푸켓</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="submenu_text" href="#;">말레이시아</a>
+                        <span class="gray_more_icon"></span>
+                        <ul class="submenu_sub_list">
+                            <li><a class="submenu_sub_text" href="#;">페낭</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="submenu_text" href="#;">베트남</a>
+                        <span class="gray_more_icon"></span>
+                        <ul class="submenu_sub_list">
+                            <li><a class="submenu_sub_text" href="#;">다낭</a></li>
+                            <li><a class="submenu_sub_text" href="#;">하노이</a></li>
+                            <li><a class="submenu_sub_text" href="#;">푸꾸옥</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a class="mainmenu_text" href="#;">서비스안내</a>
+                <span class="more_down_icon"></span>
+                <ul class="submenu_list">
+                    <li>
+                        <a class="submenu_text" href="#;">여정</a>
+                        <span class="gray_more_icon"></span>
+                        <ul class="submenu_sub_list">
+                            <li><a class="submenu_sub_text" href="#;">중요 알림</a></li>
+                            <li><a class="submenu_sub_text" href="#;">보유 기종</a></li>
+                            <li><a class="submenu_sub_text" href="#;">여행 서류</a></li>
+                            <li><a class="submenu_sub_text" href="#;">면세품 한도</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="submenu_text" href="#;">부가서비스</a>
+                        <span class="gray_more_icon"></span>
+                        <ul class="submenu_sub_list">
+                            <li><a class="submenu_sub_text" href="#;">수화물</a></li>
+                            <li><a class="submenu_sub_text" href="#;">좌석</a></li>
+                            <li><a class="submenu_sub_text" href="#;">비상구 좌석</a></li>
+                            <li><a class="submenu_sub_text" href="#;">기내식</a></li>
+                            <li><a class="submenu_sub_text" href="#;">U-First</a></li>
+                            <li><a class="submenu_sub_text" href="#;">U-Connect연결 항공편</a></li>
+                            <li><a class="submenu_sub_text" href="#;">해외여행자 보험</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="submenu_text" href="#;">운임</a>
+                        <span class="gray_more_icon"></span>
+                        <ul class="submenu_sub_list">
+                            <li><a class="submenu_sub_text" href="#;">요금 카테고리</a></li>
+                            <li><a class="submenu_sub_text" href="#;">요금 규정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="submenu_text" href="#;">가이드라인</a>
+                        <span class="gray_more_icon"></span>
+                        <ul class="submenu_sub_list">
+                            <li><a class="submenu_sub_text" href="#;">웹 사이트 예약</a></li>
+                            <li><a class="submenu_sub_text" href="#;">모바일 앱 예약</a></li>
+                            <li><a class="submenu_sub_text" href="#;">그룹 예약</a></li>
+                            <li><a class="submenu_sub_text" href="#;">예약 관리</a></li>
+                            <li><a class="submenu_sub_text" href="#;">온라인 체크인 방법</a></li>
+                            <li><a class="submenu_sub_text" href="#;">체크인 카운터 시간표</a></li>
+                            <li><a class="submenu_sub_text" href="#;">그레타베이 지역 체크인</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="submenu_text" href="#;">특별상품</a>
+                        <span class="gray_more_icon"></span>
+                        <ul class="submenu_sub_list">
+                            <li><a class="submenu_sub_text" href="#;">기내 식별</a></li>
+                            <li><a class="submenu_sub_text" href="#;">호텔</a></li>
+                            <li><a class="submenu_sub_text" href="#;">자동차 렌탈</a></li>
+                            <li><a class="submenu_sub_text" href="#;">액티비티</a></li>
+                            <li><a class="submenu_sub_text" href="#;">기내잡지</a></li>
+                        </ul>
+                    </li>
+                </ul> 
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- 상단영역끝 -->
+<!-- 비쥬얼 및 컨텐츠 영역 시작 -->
+<main>
+    <!-- 비쥬얼영역 시작 -->
+    <div class="swiper mySwiper">
+        <ul id="visual_list" class="swiper-wrapper">
+            <li class="swiper-slide">
+                <section class="visual_text">
+                    <h2 class="visual_text_title">
+                        홍콩익스프레스로 꿈꾸는 여행을 현실로
+                    </h2>
+                    <p class="visual_little_text">
+                        합리적인 가격과 빠르고 편리한 이동으로 아시아의 매력을<br>만끽하세요.
+                    </p>
+                </section>
+            </li>
+            <li class="swiper-slide">
+                <section class="visual_text">
+                    <h2 class="visual_text_title">
+                        다양한 아시아 노선, 다양한 선택
+                    </h2>
+                    <p class="visual_little_text">
+                        원하는 목적지로 빠르게 이동하고, 아시아를 한껏 즐겨보세요.
+                    </p> 
+                </section>
+            </li>
+            <li class="swiper-slide">
+                <section class="visual_text">
+                    <h2 class="visual_text_title">
+                        편안하고 안전한 여행, 고객을 최우선으로
+                    </h2>
+                    <p class="visual_little_text">
+                        안전한 비행과 세심한 서비스로 최상의 여행을 제공합니다.
+                    </p>
+                </section>
+            </li>
+        </ul>
+    </div>
+    <!-- 비쥬얼영역 끝 -->
+    <!-- 예약창 시작 -->
+        <section id="reservation">
+            <h2 class="hidden">예약창</h2>
+            <ul id="panel_list">
+                <li class="selected">
+                    <p class="panel_text">왕복</p>
+                </li>
+                <li>
+                    <p class="panel_text">편도</p>
+                </li>
+                <li>
+                    <p class="panel_text">다구간</p>
+                </li>
+            </ul>
+
+            <ul id="contents_list">
+                <li class="selected">
+                    <div class="contents_wrap">
+                        <section class="direction_bar left">
+                            <h2 class="content_text">출발지</h2>
+                        </section>
+                        <a class="change_btn" href="#;"></a>
+                        <section class="direction_bar right">
+                            <h2 class="content_text">도착지</h2>
+                        </section>
+                        <section class="direction_bar left">
+                            <h2 class="content_text">가는날</h2>
+                        </section>
+                        <span class="during_icon"></span>
+                        <section class="direction_bar right">
+                            <h2 class="content_text">오는날</h2>
+                        </section>
+                        <section class="direction_bar left">
+                            <h2 class="content_text">탑승객 1명</h2>
+                        </section>
+                        <a class="promotion_icon" href="#;">
+                           <span class="promotion_text">프로모션 코드</span>
+                        </a>
+                    </div>
+                    <button class="serch_btn">
+                        <span class="serch_text">검색</span>
+                    </button>
+                </li>
+
+                <li>
+                   <div class="contents_wrap">
+                        <section class="direction_bar left">
+                            <h2 class="content_text">출발지</h2>
+                        </section>
+                        <a class="change_btn" href="#;"></a>
+                        <section class="direction_bar right">
+                            <h2 class="content_text">도착지</h2>
+                        </section>
+                        <section class="direction_bar left">
+                            <h2 class="content_text">가는날</h2>
+                        </section>
+                        <span class="during_icon"></span>
+                        
+                        <section class="direction_bar right">
+                            <h2 class="content_text">탑승객 1명</h2>
+                        </section>
+                        <a class="promotion_icon" href="#;">
+                           <span class="promotion_text">프로모션 코드</span>
+                        </a>
+                    </div>
+                    <button class="serch_btn">
+                        <span class="serch_text">검색</span>
+                    </button>
+                </li>
+
+                <li>
+                    <div class="contents_wrap">
+                        <section class="direction_bar left">
+                            <h2 class="content_text">출발지</h2>
+                        </section>
+                        <a class="change_btn" href="#;"></a>
+                        <section class="direction_bar right">
+                            <h2 class="content_text">도착지</h2>
+                        </section>
+                        <section class="direction_bar left">
+                            <h2 class="content_text">가는날</h2>
+                        </section>
+                        <span class="during_icon"></span>
+                        <section class="direction_bar right">
+                            <h2 class="content_text">오는날</h2>
+                        </section>
+                        <section class="direction_bar left">
+                            <h2 class="content_text">탑승객 1명</h2>
+                        </section>
+                        <section id="moredirection_bar">
+                            <h2 class="content_text third">여정추가</h2>
+                            <a id="plus_black" href="#;"></a>
+                        </section>
+                    </div>
+                    <a class="promotion_icon" href="#;">
+                        <span class="promotion_text">프로모션 코드</span>
+                     </a>
+                     <button class="serch_btn">
+                        <span class="serch_text">검색</span>
+                    </button>
+                </li>
+            </ul>
+        </section>
+    <!-- 예약창 끝 -->
+    <!-- 추천여행지시작 -->
+    <section id="recommand">
+        <h2 class="title">추천여행지</h2>
+        <p class="little_title">이번엔 여기로 떠나볼까요?</p>
+            <ul id="recommand_list">
+                <li>
+                    <p class="route_text">서울(인천)-히로시마</p>
+                    <p class="price">KRW 85,200</p>
+                    <p class="date">2024.12.17(화)</p>
+                </li>
+                <li>
+                    <p class="route_text">서울(인천)-페낭</p>
+                    <p class="price">KRW 95,200</p>
+                    <p class="date">2024.12.17(화)</p>
+                </li>
+                <li>
+                    <p class="route_text">서울(인천)-푸꾸옥</p>
+                    <p class="price">KRW 87,900</p>
+                    <p class="date">2024.12.17(화)</p>
+                </li>
+                <li>
+                    <p class="route_text">서울(인천)-돈므앙</p>
+                    <p class="price">KRW 110,300</p>
+                    <p class="date">2024.12.17(화)</p>
+                </li>
+                <li>
+                    <p class="route_text">서울(인천)-센다이</p>
+                    <p class="price">KRW 127,230</p>
+                    <p class="date">2024.12.17(화)</p>
+                </li>
+                <li>
+                    <p class="route_text">서울(인천)-시즈오카</p>
+                    <p class="price">KRW 98,600</p>
+                    <p class="date">2024.12.17(화)</p>
+                </li> 
+            </ul>
+            <span id="prev_btn"></span>
+            <span id="next_btn"></span>
+    </section>
+    <!-- 추천여행지끝 -->
+    <!-- 정보컨텐츠시작 -->
+    <section id="information">
+        <h2 class="title">여행 시작 전, 확인하세요!</h2>
+
+        <ul id="information_list">
+            <li>
+                <a class="information_title" href="#;">공지사항 확인</a>
+                <span class="more_icon"></span>
+                <p class="information_text">안전하고 원활한 여행을<br>준비하세요!</p>
+                <span class="effect_icon"></span>
+            </li>
+            <li>
+                <a class="information_title" href="#;">위탁수화물 추가</a>
+                <span class="more_icon"></span>
+                <p class="information_text">지금 바로 추가해서 최대 48%<br>할인 혜택 받으세요!</p>
+                <span class="effect_icon"></span>
+            </li>
+            <li>
+                <a class="information_title" href="#;">여행가이드</a>
+                <span class="more_icon"></span>
+                <p class="information_text">풍부한 여행가이드를 통해<br>영감을 받아보세요!</p>
+                <span class="effect_icon"></span>
+            </li>
+            <li>
+                <a class="information_title" href="#;">사전좌석구매</a>
+                <span class="more_icon"></span>
+                <p class="information_text">지금 바로 구매하시고<br>최대 60% 할인 혜택<br>받아보세요!</p>
+                <span class="effect_icon"></span>
+            </li>
+        </ul>
+    </section>
+    <!-- 정보컨텐츠끝 -->
+    <!-- 주요여행지시작 -->
+    <section id="popular">
+        <h2 class="title">주요 여행지</h2>
+        <p class="little_title">인기 많은 곳만 보여드려요!</p>
+        <ul id="popular_text_list">
+            <li>
+                <p class="popular_text">#겨울은 역시 일본</p>
+                <span class="more_down_light_icon"></span>
+                <ul class="popular_place_list">
+                    <li>
+                        <p class="popular_little_text">일본</p>
+                        <p class="popular_big_text">후쿠오카</p>
+                        <p class="popular_date">2024.12.16</p>
+                        <p class="popular_price">KW 103,400~</p>
+                    </li>
+                    <li>
+                        <p class="popular_little_text">일본</p>
+                        <p class="popular_big_text">나고야</p>
+                        <p class="popular_date">2024.12.16</p>
+                        <p class="popular_price">KW 103,400~</p>
+                    </li>
+                    <li>
+                        <p class="popular_little_text">일본</p>
+                        <p class="popular_big_text">가고시마</p>
+                        <p class="popular_date">2024.12.16</p>
+                        <p class="popular_price">KW 89,600~</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <p class="popular_text">
+                    #더울 때는 따듯한 나라로_태국
+                </p>
+                <span class="more_down_light_icon"></span>
+                <ul class="popular_place_list">
+                    <li>
+                        <p class="popular_little_text">태국</p>
+                        <p class="popular_big_text">치앙마이</p>
+                        <p class="popular_date">2024.12.16</p>
+                        <p class="popular_price">KW 140,200~</p>
+                    </li>
+                    <li>
+                        <p class="popular_little_text">태국</p>
+                        <p class="popular_big_text">푸켓</p>
+                        <p class="popular_date">2024.12.16</p>
+                        <p class="popular_price">KW 130,600~</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <p class="popular_text">
+                    #무비자의 혜택_중국
+                </p>
+                <span class="more_down_light_icon"></span>
+                <ul class="popular_place_list">
+                    <li>
+                        <p class="popular_little_text">중국</p>
+                        <p class="popular_big_text">베이징</p>
+                        <p class="popular_date">2024.12.16</p>
+                        <p class="popular_price">KW 92,300~</p>
+                    </li>
+                    <li>
+                        <p class="popular_little_text">중국</p>
+                        <p class="popular_big_text">선전</p>
+                        <p class="popular_date">2024.12.16</p>
+                        <p class="popular_price">KW 103,400~</p>
+                    </li>
+                    <li>
+                        <p class="popular_little_text">중국</p>
+                        <p class="popular_big_text">닝보</p>
+                        <p class="popular_date">2024.12.16</p>
+                        <p class="popular_price">KW 110,600~</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p class="popular_text">
+                    #열대 과일이 땡길 때_베트남
+                </p>
+                <span class="more_down_light_icon"></span>
+                <ul class="popular_place_list">
+                    <li>
+                        <p class="popular_little_text">베트남</p>
+                        <p class="popular_big_text">다낭</p>
+                        <p class="popular_date">2024.12.16</p>
+                        <p class="popular_price">KW 110,100~</p>
+                    </li>
+                    <li>
+                        <p class="popular_little_text">베트남</p>
+                        <p class="popular_big_text">하노이</p>
+                        <p class="popular_date">2024.12.16</p>
+                        <p class="popular_price">KW 98,000~</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <!-- 주요여행지끝 -->
+    <!-- 띠배너시작 -->
+    <section id="banner" class="swiper mySwiper">
+        <h2 class="hidden">띠배너</h2>
+            <ul id="banner_list" class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="banner_explain_wrap">
+                        <span class="explain_icon"></span>
+                        <p class="banner_text">최대 75%할인으로 여행의<br>편안함을 누리세요!</p>
+                        <span class="site_link_icon"></span>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="banner_explain_wrap">
+                        <span class="explain_icon"></span>
+                        <p class="banner_text">최대 50%할인으로 즐거운<br>액티비티를 체험하세요!</p>
+                        <span class="site_link_icon"></span>
+                    </div> 
+                </li>
+                <li class="swiper-slide">
+                    <div class="banner_explain_wrap">
+                        <span class="explain_icon"></span>
+                        <p class="banner_text">단독 특가로 안전한<br>여행을 즐기세요!</p>
+                        <span class="site_link_icon"></span>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="banner_explain_wrap">
+                        <span class="explain_icon"></span>
+                        <p class="banner_text">공항 수하물 배달 서비스로<br>편한 여행을 즐기세요!</p>
+                        <span class="site_link_icon"></span>
+                    </div>
+                </li>
+            </ul>
+    </section>
+    <!-- 띠배너끝 -->
+</main> 
+
+<footer>
+    <div id="logo_wrap">
+        <span id="footer_logo"></span>
+
+        <div id="sns_box">
+            <a class="sns_logo" href="#;">
+                <img src="/hongkong_rwd/mobile/images/facebook_img.png" alt="페이스북바로가기">
+            </a>
+            <a class="sns_logo" href="#;">
+                <img src="/hongkong_rwd/mobile/images/youtube_img.png" alt="유튜브바로가기">
+            </a>
+            <a class="sns_logo" href="#;">
+                <img src="/hongkong_rwd/mobile/images/insta_img.png" alt="인스타바로가기">
+            </a>
+            <a class="sns_logo" href="#;">
+                <img src="/hongkong_rwd/mobile/images/linked_img.png" alt="링크드바로가기">
+            </a>
+        </div>
+    </div>
+    <div id="about_wrap">
+        <a class="about_text" href="#;">ABOUT</a>
+        <a class="about_text" href="#;">HELP</a>
+        <a class="about_text" href="#;">비용</a>
+        <a class="about_text" href="#;">개인정보 취급방법</a>
+    </div>
+    <a id="copyright_text" href="#;">Copyright © 2024 Hong Kong Express Airways Limited. 沪ICP备16000408号-1</a>
+</footer>
+</body>
+</html>
