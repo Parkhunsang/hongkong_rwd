@@ -1,0 +1,162 @@
+div.portfolio_guide_wrap {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1200;
+  pointer-events: none;
+}
+section.portfolio_guide {
+  width: min(380px, calc(100vw - 32px));
+  background: rgba(253, 251, 247, 0.96);
+  border: 1px solid rgba(84, 84, 84, 0.16);
+  border-radius: 22px;
+  padding: 20px 20px 18px;
+  box-sizing: border-box;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.14);
+  backdrop-filter: blur(14px);
+  pointer-events: auto;
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.28s ease,
+    transform 0.28s ease;
+  position: relative;
+}
+div.portfolio_guide_wrap.is-visible section.portfolio_guide {
+  opacity: 1;
+  transform: translateY(0px);
+}
+p.portfolio_guide_eyebrow {
+  font:
+    600 11px/1 "Noto Sans KR",
+    sans-serif;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #00a9e0;
+  padding-right: 48px;
+}
+button.portfolio_guide_close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: #ebe5d8;
+  color: #333333;
+  font:
+    400 20px/1 "Noto Sans KR",
+    sans-serif;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+div.portfolio_guide_text {
+  margin-top: 12px;
+}
+div.portfolio_guide_text strong {
+  display: block;
+  font:
+    500 20px/1.45 "Noto Sans KR",
+    sans-serif;
+  color: #333333;
+  word-break: keep-all;
+}
+div.portfolio_guide_text p {
+  margin-top: 8px;
+  font:
+    400 13px/1.75 "Noto Sans KR",
+    sans-serif;
+  color: #545454;
+  word-break: keep-all;
+}
+ul.portfolio_guide_links {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+ul.portfolio_guide_links li {
+  flex: 1 1 calc(50% - 5px);
+}
+ul.portfolio_guide_links li a {
+  width: 100%;
+  min-height: 46px;
+  padding: 0px 14px;
+  border-radius: 999px;
+  border: 1px solid #d9d1c4;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  font:
+    500 13px/1.35 "Noto Sans KR",
+    sans-serif;
+  color: #333333;
+  transition: 0.25s ease;
+}
+ul.portfolio_guide_links li a:hover {
+  border-color: #00a9e0;
+  color: #00a9e0;
+  transform: translateY(-2px);
+}
+ul.portfolio_guide_links li a.current {
+  background: #00a9e0;
+  border-color: #00a9e0;
+  color: #ffffff;
+  pointer-events: none;
+}
+button.portfolio_guide_trigger {
+  margin-left: auto;
+  padding: 0px 18px;
+  height: 46px;
+  border: none;
+  border-radius: 999px;
+  background: #333333;
+  color: #ffffff;
+  font:
+    500 13px "Noto Sans KR",
+    sans-serif;
+  letter-spacing: 0.04em;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  pointer-events: auto;
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 0.24s ease,
+    transform 0.24s ease,
+    background 0.24s ease;
+}
+button.portfolio_guide_trigger:hover {
+  background: #00a9e0;
+}
+div.portfolio_guide_wrap.is-hidden button.portfolio_guide_trigger {
+  opacity: 1;
+  transform: translateY(0px);
+}
+div.portfolio_guide_wrap.is-hidden section.portfolio_guide {
+  opacity: 0;
+  transform: translateY(18px);
+  pointer-events: none;
+}
+@media screen and (max-width: 980px) {
+  div.portfolio_guide_wrap {
+    right: 12px;
+    left: 12px;
+    bottom: 12px;
+  }
+  section.portfolio_guide {
+    width: 100%;
+    padding: 18px 16px 16px;
+    border-radius: 18px;
+  }
+  div.portfolio_guide_text strong {
+    font-size: 18px;
+  }
+  ul.portfolio_guide_links li {
+    flex: 1 1 100%;
+  }
+}

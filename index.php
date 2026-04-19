@@ -90,7 +90,7 @@
         </section>
     </div>
     <!-- 컨텐츠(예약창)끝 -->
-     <!-- 컨텐츠(가치)시작 -->
+    <!-- 컨텐츠(가치)시작 -->
     <div id="company_value_wrap">
         <section id="value">
             <h2 id="value_big_title">
@@ -425,6 +425,25 @@
             </div>
         </section>
     </div>
+</div>
+<!-- 가이드리모콘 영역 -->
+<div class="portfolio_guide_wrap">
+    <section class="portfolio_guide">
+        <button type="button" class="portfolio_guide_close" aria-label="안내 닫기">×</button>
+        <p class="portfolio_guide_eyebrow">Portfolio Guide</p>
+        <div class="portfolio_guide_content">
+            <div class="portfolio_guide_text">
+                <strong>현재 보고 있는 화면은 메인 페이지입니다.</strong>
+                <p>서브페이지는 메뉴<스토어>-><커피>-><모든 커피>로 이동가능합니다.</p>
+            </div>
+            <ul class="portfolio_guide_links">
+                <li><a href="./index.html" class="current">메인 페이지</a></li>
+                <li><a href="./allcoffee/allcoffee.html">서브 페이지 보기</a></li>
+                <li><a href="./firstespressoblend/firstespressoblend.html">상세 페이지 보기</a></li>
+            </ul>
+        </div>
+    </section>
+    <button type="button" class="portfolio_guide_trigger">Flow Guide</button>
 </div>
 <!-- 컨텐츠(정보제공)끝 -->
 <!-- 푸터시작 -->
