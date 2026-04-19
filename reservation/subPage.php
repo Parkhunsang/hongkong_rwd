@@ -1,6 +1,8 @@
 <? include_once $_SERVER["DOCUMENT_ROOT"]."/hongkong_rwd/inc/start.html" ?>
     <link rel="stylesheet" href="/hongkong_rwd/reservation/sub_css/subPage.css">
+    <link rel="stylesheet" href="/hongkong_rwd/css/portfolio-guide.css">
     <script src="/hongkong_rwd/reservation/sub_js/contents.js"></script>
+    <script src="/hongkong_rwd/js/portfolio-guide.js"></script>
     <title>Document</title>
        
 </head>
@@ -537,6 +539,25 @@
     </div>
 </div>
 <!-- 컨텐츠(도착편)끝 -->
+ <!-- 가이드리모콘 영역 -->
+<div class="portfolio_guide_wrap">
+    <section class="portfolio_guide">
+        <button type="button" class="portfolio_guide_close" aria-label="안내 닫기">×</button>
+        <p class="portfolio_guide_eyebrow">Portfolio Guide</p>
+        <div class="portfolio_guide_content">
+            <div class="portfolio_guide_text">
+                <strong>현재 보고 있는 화면은 메인 페이지입니다.</strong>
+                <p>서브페이지는 메뉴<마이페이지>-><항공권예약>으로 이동가능합니다.</p>
+            </div>
+            <ul class="portfolio_guide_links">
+                <li><a href="http://daxi88.dothome.co.kr/hongkong_rwd/index.php" class="current">메인 페이지</a></li>
+                <li><a href="http://daxi88.dothome.co.kr/hongkong_rwd/country/hiroshima.php">서브 페이지 보기</a></li>
+                <li><a href="http://daxi88.dothome.co.kr/hongkong_rwd/reservation/subPage.php">상세 페이지 보기</a></li>
+            </ul>
+        </div>
+    </section>
+    <button type="button" class="portfolio_guide_trigger">Flow Guide</button>
+</div>
 <!-- 푸터시작 -->
 <? include_once $_SERVER["DOCUMENT_ROOT"]."/hongkong_rwd/inc/footer.html" ?>
 </body>

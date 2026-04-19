@@ -32,7 +32,7 @@ p.portfolio_guide_eyebrow {
     sans-serif;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #00a9e0;
+  color: #702b91;
   padding-right: 48px;
 }
 button.portfolio_guide_close {
@@ -98,13 +98,13 @@ ul.portfolio_guide_links li a {
   transition: 0.25s ease;
 }
 ul.portfolio_guide_links li a:hover {
-  border-color: #00a9e0;
-  color: #00a9e0;
+  border-color: #702b91;
+  color: #702b91;
   transform: translateY(-2px);
 }
 ul.portfolio_guide_links li a.current {
-  background: #00a9e0;
-  border-color: #00a9e0;
+  background: #702b91;
+  border-color: #702b91;
   color: #ffffff;
   pointer-events: none;
 }
@@ -131,7 +131,7 @@ button.portfolio_guide_trigger {
     background 0.24s ease;
 }
 button.portfolio_guide_trigger:hover {
-  background: #00a9e0;
+  background: #702b91;
 }
 div.portfolio_guide_wrap.is-hidden button.portfolio_guide_trigger {
   opacity: 1;

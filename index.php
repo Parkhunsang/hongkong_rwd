@@ -1,7 +1,9 @@
 <? include_once $_SERVER["DOCUMENT_ROOT"]."/hongkong_rwd/inc/start.html" ?>
     <link rel="stylesheet" href="/hongkong_rwd/css/main.css">
+    <link rel="stylesheet" href="/hongkong_rwd/css/portfolio-guide.css">
     <script src="/hongkong_rwd/js/visual.js"></script>
     <script src="/hongkong_rwd/js/contents.js"></script>
+    <script src="/hongkong_rwd/js/portfolio-guide.js"></script>
 
     <script>
         let ua = window.navigator.userAgent.toLowerCase();
@@ -434,12 +436,12 @@
         <div class="portfolio_guide_content">
             <div class="portfolio_guide_text">
                 <strong>현재 보고 있는 화면은 메인 페이지입니다.</strong>
-                <p>서브페이지는 메뉴<스토어>-><커피>-><모든 커피>로 이동가능합니다.</p>
+                <p>서브페이지는 메뉴<마이페이지>-><항공권예약>으로 이동가능합니다.</p>
             </div>
             <ul class="portfolio_guide_links">
-                <li><a href="./index.html" class="current">메인 페이지</a></li>
-                <li><a href="./allcoffee/allcoffee.html">서브 페이지 보기</a></li>
-                <li><a href="./firstespressoblend/firstespressoblend.html">상세 페이지 보기</a></li>
+                <li><a href="./index.php" class="current">메인 페이지</a></li>
+                <li><a href="./country/hiroshima.php">서브 페이지 보기</a></li>
+                <li><a href="./reservation/subPage.php">상세 페이지 보기</a></li>
             </ul>
         </div>
     </section>
